@@ -18,7 +18,7 @@ spec:
       containers:
         - name: nginx
           imagePullPolicy: Always
-          image: maheshgaikwad21/nginx:v0.1.0
+          image: maheshgaikwad21/nginx:v0.1.1
           ports:
             - containerPort: 80
       
