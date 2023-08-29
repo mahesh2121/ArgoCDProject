@@ -18,10 +18,10 @@ tmp_dir=$(mktemp -d)
 echo $tmp_dir
 
 # Clone GitHub repo
-git clone git@github.com:mahesh2121/ArgoCDProject .git $tmp_dir
+git clone git@github.com:mahesh2121/ArgoCDProject.git $tmp_dir
 
 # Update image tag
-sed -i '' -e "s/mahesh2121\/nginx:.*/mahesh2121\/nginx:$new_ver/g" $tmp_dir/my-app/1-deployment.yaml
+sed -i '' -e "s/maheshgaikwad21\/nginx:.*/maheshgaikwad21\/nginx:$new_ver/g" $tmp_dir/my-app/1-deployement.yaml
 
 # Commit and push
 cd $tmp_dir
